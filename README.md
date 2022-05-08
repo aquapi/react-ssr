@@ -24,12 +24,12 @@ await ssr.build();
 // Create an express server
 const app = express();
 
-// Add the middleware
-app.use(async (req, res) => {
-    // Render the content
-    const content = await ssr.renderToHTML("/home");
+// Serve the hydrate file
+app.use(express.static(".root"));
 
-    // Write the content to response
+// Render the homepage on every request ("./pages/home.js")
+app.use(async (req, res) => {
+    const content = await ssr.renderToHTML("/home");
     res.end(content);
 });
 

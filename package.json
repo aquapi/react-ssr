@@ -1,6 +1,6 @@
 {
   "name": "react-ss",
-  "version": "1.0.1",
+  "version": "1.0.2-beta.1",
   "author": "reve-node",
   "license": "MIT",
   "scripts": {
@@ -19,6 +19,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "esbuild": "^0.14.38",
+    "esbuild-sass-plugin": "^2.2.6",
     "file-loader": "^6.2.0",
     "get-all-files": "^4.1.0",
     "react": "^18.1.0",
