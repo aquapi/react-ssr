@@ -18,7 +18,8 @@ import ssr from "react-ss";
 import express from "express";
 
 // Create the root to render
-await ssr.createRoot();
+// Use this with nodemon to rebuild when anything change
+await ssr.build();
 
 // Create an express server
 const app = express();
