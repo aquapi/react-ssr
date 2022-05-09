@@ -36,3 +36,7 @@ app.use(async (req, res) => {
 // Start the server
 app.listen(8080);
 ```
+
+# Documentation
+- `build(): Promise<void>`: Generate a `.root` directory. `renderToHTML` can't work before calling this.
+- `renderToHTML(): Promise<string>`: Render a page to HTML string. You need to serve the `.root` directory as a static for this to work.
